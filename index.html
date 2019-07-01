@@ -32,6 +32,8 @@
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/bootbox.min.js"></script>
+    <script src="/js/system.min.js"></script>
+    <script src="/js/signals.min.js"></script>
     <script src="/js/DeviceDetector.js"></script>
 
 </head>
@@ -85,7 +87,7 @@
         "Menu": {
 
             "File": [
-                ["Load an other file", "/viewer/reload"],
+                ["New", "/viewer/reload"],
             ],
 
         },
@@ -267,6 +269,18 @@
 
 //  window.addEventListener( "hashchange", goToHash, false );
 //  if ( window.location.hash.length > 0 ) goToHash();
+
+</script>
+
+<script>
+
+//  var panel = document.getElementById( "panel" );
+//  var viewer = document.getElementById( "viewer" );
+//  var expandButton = document.getElementById( "expandButton" );
+
+    $(nameCategoryMap.New.element).on("click"){
+        viewer.contentWindow.location.reload();
+    });
 
 </script>
 
