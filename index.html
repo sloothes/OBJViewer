@@ -72,7 +72,7 @@
 
 <section class="mbr-section" id="body-section">
 
-    <iframe id="viewer" src="/objViewer/OBJViewer.html"></iframe>
+    <iframe id="viewer" src="/OBJViewer/OBJViewer.html"></iframe>
 
 </section>
 
@@ -235,14 +235,14 @@
                 li.id = "menu-item-" + page[0].toLocaleLowerCase();
                 var a = document.createElement( "a" );
             //  a.setAttribute( "href", "#" );
-
+            /*
                 ( function( s, c, p, v ) {
                     a.addEventListener( "click", function( e ) {
                         goTo( s, c, p, v );
                         e.preventDefault();
                     });
                 })( section, category, page[ 0 ], page[ 1 ] );
-
+            */
                 a.textContent = page[ 0 ];
                 li.appendChild( a );
                 ul.appendChild( li );
